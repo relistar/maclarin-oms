@@ -13,6 +13,8 @@ export function getAPIEndpointsConfig() {
 
     const VERCEL_API_ENDPOINT = `https://${NEXT_PUBLIC_VERCEL_URL}/api`;
 
+    console.log("VERCEL_____ENV",VERCEL)
+
     let ret = {
         backend: NEXT_PUBLIC_BACKEND_API_ENDPOINT,
         frontend: VERCEL ? VERCEL_API_ENDPOINT : NEXT_PUBLIC_FRONTEND_API_ENDPOINT
