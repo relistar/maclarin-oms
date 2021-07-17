@@ -14,7 +14,6 @@ import NavBarLinks from "../components/NavBarLinks";
 import Link from "../components/Link";
 import NavBarLink from "../components/NavBarLink";
 import LoginFormBox from "../components/hocs/LoginFormBox.js";
-import {getAPIEndpointsConfig, getSessionCookieConfig} from "../config";
 
 export default function Home() {
     return (
@@ -58,18 +57,9 @@ export default function Home() {
                 </NavBar>
                 <Content>
                     <LoginFormBox/>
-                    {JSON.stringify(getAPIEndpointsConfig())}
-                    {JSON.stringify(getSessionCookieConfig())}
                 </Content>
                 <Footer/>
             </Container>
         </>
     )
-}
-
-export async function getStaticProps() {
-    console.log(getSessionCookieConfig())
-    return {
-        props: {},
-    }
 }

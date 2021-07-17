@@ -55,7 +55,7 @@ export default {
             height: [117],
             bg: 'black',
             px: 53,
-            backgroundImage: `url(${leavesBgLeft}), url(${leavesBgRight})`,
+            backgroundImage: `url(${leavesBgLeft.src}), url(${leavesBgRight.src})`,
             backgroundPosition: 'left -35px top -71px, right -45px top -71px',
             backgroundRepeat: 'no-repeat'
         },
@@ -72,7 +72,7 @@ export default {
         },
         loginFormBoxWrap: {
             height: 551,
-            backgroundImage: `url(${loginLeavesBgLeft}), url(${loginLeavesBgRight})`,
+            backgroundImage: `url(${loginLeavesBgLeft.src}), url(${loginLeavesBgRight.src})`,
             backgroundSize: 207,
             backgroundPosition: 'left top, right top',
             backgroundRepeat: 'no-repeat'

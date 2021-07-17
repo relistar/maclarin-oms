@@ -14,6 +14,7 @@ const LoginFormHeadingStyled = styled.h1`
 const LoginFormSubHeadingStyled = styled.span`
   font-size: ${props => props.theme.fontSizes.p14};
   margin-bottom: 33px;
+  text-align: center;
 `
 
 const LoginFormStyled = styled.form`
