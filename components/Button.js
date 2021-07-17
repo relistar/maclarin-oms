@@ -8,14 +8,15 @@ const StyledButton = styled.button`
   cursor: pointer;
   width: 100%;
 
+  font-size: ${props => props.theme.buttons.sizes[props.size].fontSize};
   height: ${props => props.theme.buttons.sizes[props.size].height};
   border-radius: ${props => props.theme.buttons.sizes[props.size].borderRadius};
   background-color: ${props => props.theme.buttons[props.variant].background};
   color: ${props => props.theme.buttons[props.variant].color};
   
   svg {
-    margin-left: -10px;
-    margin-right: 15px;
+    margin-left: ${props => props.theme.buttons.sizes[props.size].iconML};
+    margin-right: ${props => props.theme.buttons.sizes[props.size].iconMR};
   }
 
   &:hover {

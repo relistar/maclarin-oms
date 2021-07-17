@@ -26,19 +26,22 @@ let colors = {
     bej: '#F3ECE0'
 };
 
+let fontSizes = {
+    p12: '12px',
+    p13: '13px',
+    p14: '14px',
+    p16: '16px',
+    p18: '18px',
+    p22: '22px',
+};
+
 export default {
     breakpoints: breakpoints,
     colors: colors,
     fonts: {
         sans: 'Open Sans'
     },
-    fontSizes: {
-        p12: '12px',
-        p14: '14px',
-        p16: '16px',
-        p18: '18px',
-        p22: '22px',
-    },
+    fontSizes: fontSizes,
     fontWeights: {
         bold: 'bold',
         regular: 'regular'
@@ -82,6 +85,24 @@ export default {
             minHeight: 338,
             mt: 45,
             width: '100%'
+        },
+        statisticsBox: {
+            mx: 'auto',
+            w: '100%',
+            maxWidth: 566,
+            minHeight: 94,
+            border: `1px solid ${colors.green}`,
+            borderRadius: 61,
+            position: "relative",
+            mb: 38
+        },
+        statisticsInfo: {
+            maxWidth: 185,
+            minWidth: 185,
+            w: '100%'
+        },
+        ordersInQueue: {
+            mb: 38
         }
     },
     buttons: {
@@ -114,23 +135,41 @@ export default {
             }
         },
         sizes: {
-            small: {
+            xSmall: {
                 height: '31px',
+                fontSize: fontSizes.p12,
                 borderRadius: '35px',
                 paddingLeft: '30px',
-                paddingRight: '30px'
+                paddingRight: '30px',
+                iconML: '-10px',
+                iconMR: '5px',
+            },
+            small: {
+                height: '35px',
+                fontSize: fontSizes.p12,
+                borderRadius: '35px',
+                paddingLeft: '30px',
+                paddingRight: '30px',
+                iconML: '-10px',
+                iconMR: '5px',
             },
             large: {
                 height: '40px',
+                fontSize: fontSizes.p14,
                 borderRadius: '27px',
                 paddingLeft: '40px',
-                paddingRight: '50px'
+                paddingRight: '50px',
+                iconML: '-10px',
+                iconMR: '15px',
             },
             xLarge: {
                 height: '45px',
+                fontSize: fontSizes.p14,
                 borderRadius: '27px',
                 paddingLeft: '40px',
-                paddingRight: '50px'
+                paddingRight: '50px',
+                iconML: '-10px',
+                iconMR: '15px',
             }
         }
     },
