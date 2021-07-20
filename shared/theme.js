@@ -23,10 +23,13 @@ let colors = {
     black40: 'rgba(0, 0, 0, 0.4)',
     black20: 'rgba(0, 0, 0, 0.2)',
     black10: 'rgba(0, 0, 0, 0.1)',
-    bej: '#F3ECE0'
+    bej: '#F3ECE0',
+    gray: '#C4C4C4',
+    gray30: 'rgba(48, 48, 48, 0.3)',
 };
 
 let fontSizes = {
+    p9: '9px',
     p12: '12px',
     p13: '13px',
     p14: '14px',
@@ -52,6 +55,9 @@ export default {
             minWidth: breakpoints.xs,
             bg: 'bej',
             mx: 'auto'
+        },
+        content: {
+            mx: 53
         },
         header: {
             width: '100%',
@@ -103,6 +109,62 @@ export default {
         },
         ordersInQueue: {
             mb: 38
+        },
+        orderHead: {
+            mt: 30,
+            mb: 25,
+            height: 45,
+            width: '100%'
+        },
+        orderHeadColumn: {
+            mr: 41,
+            '&:last-child': {
+                mr: 0,
+                mt: '-3px'
+            }
+        },
+        orderHeadColumnItem: {
+            mb: 14
+        },
+        orderHeadColumnItemMT: {
+            mt: -5
+        },
+        orderHeadColumnItemMB: {
+            mb: '7px'
+        },
+        colText: {
+            color: colors.black60,
+            fontSize: fontSizes.p12
+        },
+        colTextOrange: {
+            color: colors.orange,
+            fontSize: fontSizes.p12
+        },
+        button216: {
+            maxWidth: 216,
+            width: '100%'
+        },
+        cardInputComment: {
+            maxWidth: 200,
+            width: '100%'
+        },
+        cardInputServiceComment: {
+            maxWidth: 286,
+            width: '100%'
+        },
+        cardInputPromoCode: {
+            maxWidth: 162,
+            width: '100%'
+        },
+        totalPrice: {
+            px: 20
+        },
+        orderAF: {
+            mb: 25
+        },
+        kitchenSwiperWrap: {
+            mb: 10,
+            minHeight: 118
         }
     },
     buttons: {
@@ -181,7 +243,7 @@ export default {
         },
         sizes: {
             small: {
-                height: '45px',
+                height: '31px',
                 borderRadius: '5px',
                 padding: '13px'
             },

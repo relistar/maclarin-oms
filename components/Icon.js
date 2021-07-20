@@ -14,6 +14,14 @@ export function PlusIcon(props) {
     </Icon>;
 }
 
+export function MinusIcon(props) {
+    return <Icon {...props}>
+        <path
+            d="M9.08335 1.58335H0.916687V0.416687H9.08335V1.58335Z"
+            fill={props.fill}/>
+    </Icon>;
+}
+
 export function TickIcon(props) {
     return <Icon {...props}>
         <path
@@ -24,7 +32,7 @@ export function TickIcon(props) {
 
 export function ChevronRightIcon(props) {
     return <Icon {...props}>
-        <path d="M13.5 7.5L12.4425 6.4425L9 9.8775L5.5575 6.4425L4.5 7.5L9 12L13.5 7.5Z" fill={props.fill}/>
+        <path d="M7.5 4.5L6.4425 5.5575L9.8775 9L6.4425 12.4425L7.5 13.5L12 9L7.5 4.5Z" fill={props.fill}/>
     </Icon>;
 }
 
@@ -54,6 +62,22 @@ export function SearchIcon(props) {
     return <Icon {...props}>
         <path
             d="M13 11H12.21L11.93 10.73C12.91 9.59 13.5 8.11 13.5 6.5C13.5 2.91 10.59 0 7 0C3.41 0 0.5 2.91 0.5 6.5C0.5 10.09 3.41 13 7 13C8.61 13 10.09 12.41 11.23 11.43L11.5 11.71V12.5L16.5 17.49L17.99 16L13 11ZM7 11C4.51 11 2.5 8.99 2.5 6.5C2.5 4.01 4.51 2 7 2C9.49 2 11.5 4.01 11.5 6.5C11.5 8.99 9.49 11 7 11Z"
+            fill={props.fill}/>
+    </Icon>;
+}
+
+export function CardIcon(props) {
+    return <Icon {...props}>
+        <path
+            d="M13.5 0H1.5C0.6675 0 0.00749999 0.6675 0.00749999 1.5L0 10.5C0 11.3325 0.6675 12 1.5 12H13.5C14.3325 12 15 11.3325 15 10.5V1.5C15 0.6675 14.3325 0 13.5 0ZM13.5 10.5H1.5V6H13.5V10.5ZM13.5 3H1.5V1.5H13.5V3Z"
+            fill={props.fill}/>
+    </Icon>;
+}
+
+export function RingBellIcon(props) {
+    return <Icon {...props}>
+        <path
+            d="M4.66667 11.375C5.30833 11.375 5.83333 10.85 5.83333 10.2083H3.5C3.5 10.85 4.01917 11.375 4.66667 11.375ZM8.16667 7.875V4.95833C8.16667 3.1675 7.21 1.66833 5.54167 1.27167V0.875C5.54167 0.390833 5.15083 0 4.66667 0C4.1825 0 3.79167 0.390833 3.79167 0.875V1.27167C2.1175 1.66833 1.16667 3.16167 1.16667 4.95833V7.875L0 9.04167V9.625H9.33333V9.04167L8.16667 7.875Z"
             fill={props.fill}/>
     </Icon>;
 }

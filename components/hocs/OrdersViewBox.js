@@ -13,12 +13,12 @@ import DotsLoader from "../DotsLoader";
 import OrdersInQueue from "../OrdersInQueue";
 import OrdersQueueLoader from "../OrdersQueueLoader";
 import OrdersInQueueValue from "../OrdersInQueueValue";
-import {Swiper, SwiperSlide} from 'swiper/react';
 import Button from "../Button";
 import ReadyOrderSlide from "../ReadyOrderSlide";
-import ReadyOrdersView from "../ReadyOrdersView";
+import OrdersSwipeView from "../OrdersSwipeView";
 import ReadyOrdersViewHeading from "../ReadyOrdersViewHeading";
 import React from "react";
+import {Swiper, SwiperSlide} from 'swiper/react';
 import SwiperCore, {
     Navigation
 } from 'swiper/core';
@@ -65,7 +65,7 @@ export default function OrdersViewBox() {
                 <OrdersInQueue>В очереди: <OrdersInQueueValue>20</OrdersInQueueValue></OrdersInQueue>
             </Flex>
             <Flex theme={theme} justifyContent='center'>
-                <ReadyOrdersView>
+                <OrdersSwipeView>
                     <ReadyOrdersViewHeading>Заказы готовые к выдаче</ReadyOrdersViewHeading>
                     <Swiper
                         slidesPerView='auto'
@@ -80,7 +80,7 @@ export default function OrdersViewBox() {
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                </ReadyOrdersView>
+                </OrdersSwipeView>
             </Flex>
         </OrdersViewBoxStyled>
     )

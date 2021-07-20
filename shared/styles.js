@@ -29,8 +29,8 @@ export const globalStyles = (
         width: auto !important;
 
         &:first-child {
-          margin-right: 13px!important;
-          margin-left: 30px;
+          margin-right: 20px!important;
+          margin-left: 31px;
         }
       }
 
@@ -65,6 +65,51 @@ export const globalStyles = (
         &:after {
           display: none;
         }
+      }
+      
+      .swiper-container.orderLines {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        padding-right: 40px;
+        padding-top: 25px;
+
+        .swiper-slide:first-child {
+          margin: 0 !important;
+        }
+
+        .swiper-slide {
+          height: auto;
+        }
+
+        .swiper-scrollbar {
+          background: none;
+
+          .swiper-scrollbar-drag {
+            width: 6px;
+
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 33px;
+          }
+        }
+      }
+
+      input[type='number'] {
+        -moz-appearance: textfield;
+      }
+
+      input[type='number']::-webkit-outer-spin-button,
+      input[type='number']::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+
+      .reset [type="number"] {
+        -moz-appearance: spinner-textfield;
+      }
+
+      .reset input[type='number']::-webkit-outer-spin-button,
+      .reset input[type='number']::-webkit-inner-spin-button {
+        -webkit-appearance: inner-spin-button;
       }
     `}
     />

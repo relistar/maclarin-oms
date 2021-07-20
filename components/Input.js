@@ -13,6 +13,7 @@ const InputStyled = styled.input`
   color: ${props => props.theme.colors.black};
   padding: ${props => props.theme.inputs.sizes[props.size].padding};
   border: 1px solid ${props => props.theme.inputs.variants[props.variant].borderColor};
+  font-size: ${props => props.theme.fontSizes.p12};
 
   &:focus {
     outline: none;
@@ -63,7 +64,7 @@ export default function Input(props) {
         withStatusIcon
     } = props
 
-    const inputVariant = withLabel && (success && 'success' || error && 'error' || 'default')
+    const inputVariant = withLabel && (success && 'success' || error && 'error' ) || 'default'
 
     return (
         <>

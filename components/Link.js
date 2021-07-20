@@ -8,6 +8,6 @@ export default function Link(props) {
 
 const LinkStyled = styled.a`
     font-size: ${props => props.theme.fontSizes.p14};
-    color: ${props => props.theme.colors.bej};
+    color: ${props => props.color ? props.color : props.theme.colors.bej};
     text-decoration: underline;
 `
